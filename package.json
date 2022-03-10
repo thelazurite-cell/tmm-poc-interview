@@ -1,0 +1,40 @@
+{
+  "name": "tmm-interview-poc",
+  "version": "1.0.0",
+  "description": "the modern milkman interview proof of concept ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clear-output": "rm -rf ./output",
+    "codeceptjs": "codeceptjs run --steps",
+    "codeceptjs:ci": "codeceptjs run --reporter mochawesome",
+    "codeceptjs:headless": "HEADLESS=true codeceptjs run --steps",
+    "codeceptjs:ui": "codecept-ui --app",
+    "codeceptjs:demo": "codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+    "codeceptjs:demo:headless": "HEADLESS=true codeceptjs run --steps -c node_modules/@codeceptjs/examples",
+    "codeceptjs:demo:ui": "codecept-ui --app  -c node_modules/@codeceptjs/examples"
+  },
+  "author": "Dylan Eddies",
+  "license": "MIT",
+  "devDependencies": {
+    "@codeceptjs/configure": "^0.8.0",
+    "@codeceptjs/examples": "^1.2.1",
+    "@codeceptjs/ui": "^0.4.6",
+    "@wdio/selenium-standalone-service": "^7.16.16",
+    "codeceptjs": "^3.3.0",
+    "eslint": "^7.32.0",
+    "eslint-config-standard": "^16.0.3",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^5.2.0",
+    "playwright": "^1.19.2",
+    "webdriverio": "^6.12.1"
+  },
+  "dependencies": {
+    "@wdio/cli": "^7.16.16",
+    "mocha": "^9.2.1",
+    "mochawesome": "^7.1.2",
+    "qrcode-terminal": "^0.12.0",
+    "testcafe": "^1.18.4"
+  }
+}

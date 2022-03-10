@@ -1,0 +1,28 @@
+{
+  "emails": [
+    {
+      "email": "[object Object]",
+      "validationMessage": "Please enter the valid email"
+    },
+    {
+      "email": "",
+      "validationMessage": "Please enter your email"
+    },
+    {
+      "email": "@",
+      "validationMessage": "Please enter the valid email"
+    },
+    {
+      "email": "brian-blessed",
+      "validationMessage": "Please enter the valid email"
+    },
+    {
+      "email": "brian-blessed@",
+      "validationMessage": "Please enter the valid email"
+    },
+    {
+      "email": "me@dylaneddies",
+      "validationMessage": "Please enter the valid email"
+    }
+  ]
+}

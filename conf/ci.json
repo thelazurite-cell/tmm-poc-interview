@@ -1,0 +1,12 @@
+{
+  "provider": "webdriver",
+  "browser": "chrome",
+  "headless": true,
+  "tests": "./specs/*.js",
+  "testUrl": "http://cust.themodernmilkman.co.uk",
+  "envVars": {
+    "username": "",
+    "password": "",
+    "assertionTimeout": 30
+  }
+}
