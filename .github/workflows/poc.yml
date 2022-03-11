@@ -26,10 +26,6 @@ jobs:
     steps:
     - name: Checkout Code
       uses: actions/checkout@v2
-    - name: Setup Chrome
-      uses: browser-actions/setup-chrome@latest
-    - name: State Chrome version
-      run: chrome --version && CHROMIUM_BIN=$(which chrome)
     - name: Setup Java JDK
       uses: actions/setup-java@v3.0.0
       with:
@@ -45,6 +41,7 @@ jobs:
         node-version: ${{ matrix.node-version }}
         cache: 'npm'
     - run: npm i
+    - run: npm i -g chromedriver@98.0.1
     - run: npm run codeceptjs:ci
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v3.0.0
