@@ -10,3 +10,5 @@ Add env variables:
 
 Optionally set `ENVNAME` to CI or DEV
 if set to CI create env variables `CI_USERNAME` and `CI_PASSWORD`
+
+Note: The Workflow via github actions was not done within the 3 hour time slot, but I wanted to give it a go anyway :)
